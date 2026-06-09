@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Week04 Form และ Input Controls</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form>
+    <h2>แบบฟอร์มข้อมูลนักศึกษา</h2>
+
+    <label>ชื่อ-นามสกุล</label>
+    <input type="text" name="fullname" required>
+
+    <label>รหัสผ่าน</label>
+    <input type="password" name="password" minlength="8" required>
+
+    <label>อีเมล</label>
+    <input type="email" name="email" required>
+
+    <label>เพศ</label>
+    <div class="radio-group">
+        <input type="radio" name="gender" value="ชาย" required> ชาย
+        <input type="radio" name="gender" value="หญิง"> หญิง
+    </div>
+
+    <label>ความสามารถพิเศษ</label>
+    <div class="checkbox-group">
+        <input type="checkbox" name="skill" value="เขียนโปรแกรม"> เขียนโปรแกรม
+        <input type="checkbox" name="skill" value="ออกแบบเว็บไซต์"> ออกแบบเว็บไซต์
+        <input type="checkbox" name="skill" value="กราฟิก"> กราฟิก
+    </div>
+
+    <label>สาขาวิชา</label>
+    <select required>
+        <option value="">-- เลือกสาขา --</option>
+        <option>เทคโนโลยีสารสนเทศ</option>
+        <option>คอมพิวเตอร์ธุรกิจ</option>
+        <option>มัลติมีเดีย</option>
+    </select>
+
+    <label>ความคิดเห็นเพิ่มเติม</label>
+    <textarea rows="4"></textarea>
+
+    <button type="submit">ส่งข้อมูล</button>
+
+</form>
+
+</body>
+</html>
